@@ -19,6 +19,7 @@
 - Avoid over-engineering: no speculative features, unnecessary abstractions, or "just in case" error handling.
 - Follow existing project conventions (import styles, naming, structure).
 - Check package.json/pyproject.toml before suggesting libraries.
+- Clean up temporary files, scripts, or helpers created during iteration at the end of the task.
 
 ## Verification
 
@@ -26,6 +27,20 @@
 - Verify UI changes render correctly when applicable.
 - Use Playwright for visual verification of web apps when asked to troubleshoot.
 - Provide evidence of verification, not just assertions.
+
+## Frontend Development
+
+Avoid the generic "AI slop" aesthetic. Make creative, distinctive choices:
+
+- **Typography**: Choose distinctive fonts. Avoid generic defaults (Inter, Arial, Roboto, system fonts).
+- **Color**: Commit to a cohesive theme. Dominant colors with sharp accents beat timid, evenly-distributed palettes.
+- **Motion**: Use animations purposefully. One well-orchestrated page load with staggered reveals creates more impact than scattered micro-interactions.
+- **Backgrounds**: Create atmosphere and depth rather than solid colors.
+- **Variety**: Don't converge on the same choices across projects. Light/dark themes, different fonts, different aesthetics.
+
+## Image Analysis
+
+When analyzing images, crop or zoom into relevant regions for better accuracy. If a crop tool is available, use it to focus on specific areas rather than analyzing the full image at once.
 
 ## Documentation
 
