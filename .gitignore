@@ -1,0 +1,10 @@
+# OS files
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Local overrides (if someone wants local customization)
+*.local.md
