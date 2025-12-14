@@ -21,6 +21,18 @@ Or manually:
 ln -sf ~/Documents/Github/claude_configs/CLAUDE.md ~/.claude/CLAUDE.md
 ```
 
+## Superpowers Plugin
+
+This config is designed to work with [obra/superpowers](https://github.com/obra/superpowers), a skills library that adds TDD, debugging, code review, and planning workflows to Claude Code.
+
+Install via:
+```bash
+/plugin marketplace add obra/superpowers-marketplace
+/plugin install superpowers@superpowers-marketplace
+```
+
+The CLAUDE.md includes triggers for proactive subagent usage with superpowers skills.
+
 ## Project-Specific Rules
 
 For project-specific configuration, create a `CLAUDE.md` in the project root:
