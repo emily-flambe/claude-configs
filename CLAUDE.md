@@ -1,7 +1,6 @@
 # Claude Configuration
 
 @SECURITY.md
-@SNOWFLAKE.md
 
 ## Communication Style
 
