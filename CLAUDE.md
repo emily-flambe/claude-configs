@@ -57,3 +57,15 @@ For repositories in `demexchange` or `emily-flambe` organizations:
 - Break large tasks into smaller, verifiable steps.
 - Complete tasks fully. Don't stop mid-task or claim context limits prevent completion.
 - For multi-file searches or open-ended exploration, use the Task tool with Explore agent.
+
+## Proactive Subagent Usage
+
+Use the Skill tool to invoke these workflows automatically, not just when asked:
+
+- **Before implementing features**: Use `superpowers:brainstorming` to refine the approach before writing code
+- **After significant code changes**: Use `superpowers:requesting-code-review` to get review from a subagent
+- **When debugging**: Use `superpowers:systematic-debugging` to investigate before proposing fixes
+- **When writing tests**: Use `superpowers:test-driven-development` for the TDD workflow
+- **For large tasks (3+ independent parts)**: Use `superpowers:dispatching-parallel-agents` to parallelize work
+
+Don't wait to be asked. If a skill applies, use it.
