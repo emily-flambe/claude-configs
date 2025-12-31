@@ -16,6 +16,7 @@
 - Avoid over-engineering: no speculative features, unnecessary abstractions, or "just in case" error handling.
 - Follow existing project conventions (import styles, naming, structure).
 - Check package.json/pyproject.toml before suggesting libraries.
+- When scaffolding projects or installing CLI tools, verify current versions via npm/pypi rather than relying on training data (e.g., `npm info wrangler version`).
 - Clean up temporary files, scripts, or helpers created during iteration at the end of the task.
 
 ## Testing

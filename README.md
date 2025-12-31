@@ -21,14 +21,34 @@ Or manually:
 ln -sf ~/Documents/Github/claude_configs/CLAUDE.md ~/.claude/CLAUDE.md
 ```
 
-## Superpowers Plugin
+## Plugins
 
-This config is designed to work with [obra/superpowers](https://github.com/obra/superpowers), a skills library that adds TDD, debugging, code review, and planning workflows to Claude Code.
+This config is designed to work with the following Claude Code plugins:
 
-Install via:
+| Plugin | Source | Purpose |
+|--------|--------|---------|
+| [superpowers](https://github.com/obra/superpowers) | superpowers-marketplace | TDD, debugging, code review, planning workflows |
+| frontend-design | claude-plugins-official | Distinctive UI development, avoiding generic aesthetics |
+| pr-review-toolkit | claude-plugins-official | Comprehensive PR review with specialized agents |
+| playwright | claude-plugins-official | Browser automation and visual verification |
+| github | claude-plugins-official | GitHub integration |
+| security-guidance | claude-plugins-official | Security best practices |
+| typescript-lsp | claude-plugins-official | TypeScript language server support |
+
+Install marketplace plugins:
 ```bash
 /plugin marketplace add obra/superpowers-marketplace
 /plugin install superpowers@superpowers-marketplace
+```
+
+Install official plugins:
+```bash
+/plugin install frontend-design@claude-plugins-official
+/plugin install pr-review-toolkit@claude-plugins-official
+/plugin install playwright@claude-plugins-official
+/plugin install github@claude-plugins-official
+/plugin install security-guidance@claude-plugins-official
+/plugin install typescript-lsp@claude-plugins-official
 ```
 
 The CLAUDE.md includes triggers for proactive subagent usage with superpowers skills.
