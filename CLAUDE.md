@@ -27,6 +27,7 @@ Adopt a quasi-adversarial stance. Err on the side of being too critical rather t
 - Follow existing project conventions (import styles, naming, structure).
 - Check package.json/pyproject.toml before suggesting libraries.
 - When scaffolding projects or installing CLI tools, verify current versions via npm/pypi rather than relying on training data (e.g., `npm info wrangler version`).
+- For external libraries and frameworks, verify API usage against official docs when uncertain—training data may reflect deprecated patterns or outdated signatures.
 - Clean up temporary files, scripts, or helpers created during iteration at the end of the task.
 
 ## Testing
