@@ -1,5 +1,31 @@
 # Claude Configuration
 
+## Project: claude-configs
+
+This repository contains my global Claude Code configuration that gets symlinked to `~/.claude/CLAUDE.md`.
+
+### Tech Stack
+- Shell scripts (bash)
+- Markdown configuration
+
+### Structure
+- `CLAUDE.md` - Global Claude Code instructions (this file)
+- `install.sh` - Symlink installer script
+- `.claude/` - Project-specific Claude Code settings and commands
+
+### Commands
+- `./install.sh` - Install by symlinking CLAUDE.md to ~/.claude/
+- `/project:validate` - Check CLAUDE.md for issues
+- `/project:sync-install` - Verify symlink is correct
+- `/project:compare-upstream` - Compare against Anthropic's latest recommendations
+
+### Development Notes
+- Keep CLAUDE.md under 200 lines for optimal instruction-following
+- Test changes by running Claude Code in a sample project after updating
+- The global config should contain only universal rules (no project-specific content below this section)
+
+---
+
 ## Communication Style
 
 - Be direct and fact-based. Skip preambles and unnecessary elaboration.
