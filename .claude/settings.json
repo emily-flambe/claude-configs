@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "deny": [
+      "**/.env*",
+      "**/*.pem",
+      "**/*.key",
+      "**/credentials.json",
+      "**/secrets.*",
+      "**/.ssh/**"
+    ]
+  }
+}
