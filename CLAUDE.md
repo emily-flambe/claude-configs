@@ -7,9 +7,27 @@
 - Avoid flattery phrases like "You're absolutely right" or "Great question."
 - Ask for clarification rather than making assumptions about requirements.
 
-## Mandatory Subagent Workflows
+## Adversarial Multi-Agent Development
 
-**STOP.** Before ANY implementation task, check if a skill applies. This is not optional.
+**Default workflow for all implementation tasks.** Spawn separate agents with opposing goals:
+
+| Agent | Role | Goal |
+|-------|------|------|
+| **Implementer** | Writes code | Meet requirements, ship features |
+| **Tester** | Breaks code | Find edge cases, write failing tests, expose bugs |
+| **Reviewer** | Blocks merges | Enforce standards, catch what implementer missed |
+
+**How to execute:**
+1. Spawn Implementer agent to write initial code
+2. Spawn Tester agent (separate context) to attack it—goal is to make tests fail
+3. Implementer fixes issues Tester found
+4. Spawn Reviewer agent (separate context) to block or approve
+
+Agents must not share context—each starts fresh to avoid bias. Tester and Reviewer succeed by finding problems, not by approving.
+
+## Mandatory Skills
+
+**STOP.** Before ANY task, check if a skill applies.
 
 | Trigger | Skill |
 |---------|-------|
@@ -20,8 +38,6 @@
 | For tasks with 3+ independent parts | `superpowers:dispatching-parallel-agents` |
 
 **Skip only for**: single-line fixes, documentation-only changes, or config tweaks with no logic.
-
-When in doubt, invoke the skill. The overhead is worth catching issues early.
 
 ## Critical Posture
 
